@@ -19,7 +19,7 @@ const getJson = async () => {
 
 //display as JSON object
 getJson().then((data) => {
-  const jsonDisplay = JSON.stringify(data);
+  const jsonDisplay = JSON.stringify(data, undefined, 4);
   document.getElementById("jsonData").innerText = jsonDisplay;
 });
 
