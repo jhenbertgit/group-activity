@@ -13,7 +13,7 @@ const getJson = async () => {
       return val;
     }
   } catch (err) {
-    console.error(err);
+    alert(`${err.name}: ${err.message}`);
   }
 };
 
